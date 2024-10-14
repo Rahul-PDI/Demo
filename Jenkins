@@ -1,0 +1,12 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                // Cloning the repository from GitHub
+                git branch: 'main', url: 'https://github.com/Rahul-PDI/Demo.git'
+            }
+        }
+    }
+}
